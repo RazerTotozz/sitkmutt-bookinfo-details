@@ -1,0 +1,8 @@
+services:
+  details:
+    build: .
+    image: ghcr.io/pipe34150/bookinfo-details:prd
+    ports:
+      - "8081:8081"
+    environment:
+      SERVICE_VERSION: v1
